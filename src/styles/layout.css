@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Lora|Cinzel');
+
+body {
+  font-family: 'Raleway', serif;
+}
+
+/*.page {*/
+  /*margin-top: 40px;*/
+/*}*/
+
+/* Override Bootstrap */
+.navbar-fixed-top {
+  border-width: 0;
+}
+.navbar-default {
+  background: white;
+  color: black;
+}

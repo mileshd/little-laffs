@@ -2,10 +2,10 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+
+import "../styles/comics.css"
 
 export const pageQuery = graphql`
   query {
@@ -61,43 +61,44 @@ type Data = {
 
 const ComicIndex = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
-  /*console.log(posts)*/
-  /*const posts = data.allMarkdownRemark.edges.filter((post) => {*/
-    /*console.log(post)*/
-    /*return post.node.fields.slug.includes('comics')*/
-  /*});*/
+  const comics = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+      <SEO title="Comics" />
+      <div className="comics-page">
+        <div className="comics__section">
+          Comics have been called the "One True" medium.
+        </div>
+        <div className="comics__section">
+          A unique blend of visuals and words that wax poetic the limits of our humor and imagination. 
+        </div>
+        <div className="comics__section">
+          If you're in need of a chukle or two, you've come to the right place.
+        </div>
+        <div className="comics__section">
+          <b>
+            Pro Tip: Use the left and right arrow keys for quicker navigation.
+          </b>
+        </div>
+        <div className="comics__list">
+          {comics.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <Link key={node.fields.slug} to={node.fields.slug}>
+                <div className="comic-list-item">
+                  <div className="comic__title">
+                    {title}
+                  </div>
+                  <div className="comic__date">
+                    {node.frontmatter.date}
+                  </div>
+                </div>
+              </Link>
+            )
+          })}
+        </div>
+     </div> 
     </Layout>
   )
 }

@@ -1,0 +1,35 @@
+.comic {
+  margin-top: 60px;
+}
+
+.comic .comic__navigation {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.comic .comic__title {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.comic .comic__date {
+  display: inline-block;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+.comic .comic__navigation .btn {
+  margin-right: 10px;
+}
+
+.comic .comic__image img {
+  width: 100%;
+}
+.comic .comic__description {
+  font-size: 1.25em;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  line-height: 2;
+}
+.comics .comics-list {
+  margin-top: 25px;
+}
