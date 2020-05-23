@@ -1,31 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Little Laffs`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Miles Dickinson`,
+      summary: `Artist`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Web Presence for the artist, Little Laffs.`,
+    siteUrl: `http://littlelaffs.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `thelittlelaffs`,
     },
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content`,
+        name: `content`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
+    //{
+      //resolve: `gatsby-source-filesystem`,
+      //options: {
+        //path: `${__dirname}/content/assets`,
+        //name: `assets`,
+      //},
+    //},
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -60,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Little Laffs`,
+        short_name: `LittleLaffs`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
