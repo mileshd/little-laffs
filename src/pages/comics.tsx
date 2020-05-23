@@ -62,7 +62,6 @@ type Data = {
 class ComicIndex extends React.Component {
   componentDidMount() {
     const comics = this.props.data.allMarkdownRemark.edges
-    console.log(comics)
     const firstComic = comics[0].node
     const lastComic = comics[comics.length - 1].node
 
