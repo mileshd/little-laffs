@@ -73,11 +73,11 @@ class ComicIndex extends React.Component {
 
       // Left Arrow
       if (keyCode === 37) {
-        navigate(firstComic.fields.slug)
+        navigate(lastComic.fields.slug)
       }
       // Right Arrow
       if (keyCode === 39) {
-        navigate(lastComic.fields.slug)
+        navigate(firstComic.fields.slug)
       }
     })
   }

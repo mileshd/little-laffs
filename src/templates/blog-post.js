@@ -18,16 +18,16 @@ class BlogPostTemplate extends React.Component {
 
       // Left Arrow
       if (keyCode === 37) {
-        if (previous) {
-          navigate(previous.fields.slug)
+        if (next) {
+          navigate(next.fields.slug)
         } else {
           navigate('/comics')
         }
       }
       // Right Arrow
       if (keyCode === 39) {
-        if (next) {
-          navigate(next.fields.slug)
+        if (previous) {
+          navigate(previous.fields.slug)
         } else {
           navigate('/comics')
         }

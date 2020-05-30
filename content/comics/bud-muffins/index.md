@@ -1,10 +1,10 @@
 ---
 title: Bud Muffins
-date: "2013-05-03T00:00:00.000Z"
+date: "2013-03-13T00:00:00.000Z"
 description: "Bud Muffins"
 ---
 
-![bud muffins](./bud-muffins.gif)
+![Bud Muffins](./bud-muffins.gif)
 
 Flames are fun and easy to draw, a good decision for my first color comic.
 
