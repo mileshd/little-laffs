@@ -1,0 +1,36 @@
+.music-page {
+  margin-top: 60px;
+}
+.music-page .music-title {
+  font-size: 2em;
+}
+.music-page .music-section {
+  font-size: 1.25em;
+  margin-top: 15px;
+}
+
+.music-release {
+}
+.music-release__art {
+  display: inline-block;
+}
+.music-release__details {
+  display: inline-block;
+  vertical-align: top;
+}
+.music-release__details .details-title {
+  padding: 15px;
+  font-size: 2.5em;
+}
+.music-release__details .details-tracks {
+  font-size: 1.5em;
+  padding: 0 15px;
+}
+.music-release__details .details-tracks .track {
+  margin-bottom: 10px;
+}
+.music-release__details .details-tracks .track .artist {
+}
+.music-release__details .details-tracks .track .song {
+  margin-left: 8px;
+}
