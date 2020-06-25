@@ -23,32 +23,119 @@ const MusicPage = ({ data, location }) => {
             <div className="details-title">
               Rough Cut
             </div>
+            <div className="details-sub-title">
+              By Little Laffs, 2020
+            </div>
             <div className="details-tracks">
               <div className="track">
-                <span className="artist">
-                  Little Laffs x Tcup -
-                </span>
                 <span className="song">
-                  Apple Juice
+                  Apple Juice (feat. Tcup)
                 </span>
               </div>
               <div className="track">
-                <span className="artist">
-                  Little Laffs - 
-                </span>
                 <span className="song">
                   Darling Demo
                 </span>
               </div>
               <div className="track">
-                <span className="artist">
-                  Little Laffs x Tcup -
-                </span>
                 <span className="song">
-                  Get Out Demo
+                  Get Out (feat. Tcup)
+                </span>
+              </div>
+              <div className="track">
+                <span className="song">
+                  Dickinsonian Museum (feat. Tcup)
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="song row">
+          <div className="song__video col-sm-6">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/r153pQfeJZU"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            >
+            </iframe>
+          </div>
+          <div className="song__details col-sm-6">
+            <div className="song__details-title">Apple Juice (feat. Tcup)</div>
+            <p>
+              When it's time to enjoy the good things in life. Enjoy them.
+            </p>
+            <p>
+              Get in the zone, and stay in the zone.
+            </p>
+            <p>
+              Have the time of your life.
+            </p>
+          </div>
+        </div>
+        <div className="song row">
+          <div className="song__video col-sm-6">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/8na47XEBrLY"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            >
+            </iframe>
+          </div>
+          <div className="song__details col-sm-6">
+            <div className="song__details-title">Darling Demo</div>
+            <p>
+              This song is about finding the love of my life. I had to get the one-take demo out, but I have so much more planned for this song in the future.
+            </p>
+          </div>
+        </div>
+        <div className="song row">
+          <div className="song__video col-sm-6">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Ns_8jadm2Bo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            >
+            </iframe>
+          </div>
+          <div className="song__details col-sm-6">
+            <div className="song__details-title">Get Out (feat. Tcup)</div>
+            <p>
+              It's not even the people themselves, but who they become in our mind.
+            </p>
+            <p>
+              That's who we're really talking to. Get out of my life.
+            </p>
+            <p>
+              I've left physically, now I need to do it mentally.
+            </p>
+          </div>
+        </div>
+        <div className="song row">
+          <div className="song__video col-sm-6">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/CdJ5MPqkEkM"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            >
+            </iframe>
+          </div>
+          <div className="song__details col-sm-6">
+            <div className="song__details-title">Dickinsonian Museum (feat. Tcup)</div>
+            <p>
+              Start a riff, and the rest is history.
+            </p>
           </div>
         </div>
       </div>
