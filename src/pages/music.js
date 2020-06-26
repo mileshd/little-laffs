@@ -55,7 +55,7 @@ const MusicPage = ({ data, location }) => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/r153pQfeJZU"
+              src="https://www.youtube.com/embed/OLrJq3-Crmg"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -114,9 +114,6 @@ const MusicPage = ({ data, location }) => {
             <p>
               That's who we're really talking to. Get out of my life.
             </p>
-            <p>
-              I've left physically, now I need to do it mentally.
-            </p>
           </div>
         </div>
         <div className="song row">
@@ -124,7 +121,7 @@ const MusicPage = ({ data, location }) => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/CdJ5MPqkEkM"
+              src="https://www.youtube.com/embed/_3ahkJLh7A0"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -148,7 +145,7 @@ export default MusicPage
 export const pageQuery = graphql`
   query {
     albumArt: file(absolutePath: {
-      regex: "/rough-cut-album.png/"
+      regex: "/rough-cut-album-cover.png/"
     }) {
         childImageSharp {
           fixed(width: 250, height: 250) {
