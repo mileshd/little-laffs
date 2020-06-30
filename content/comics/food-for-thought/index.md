@@ -6,4 +6,4 @@ description: "Food for Thought"
 
 ![Food for Thought](./food-for-thought.jpg)
 
-No one *ever* thinks it will happen to them.
+No one ever thinks it will happen to *them*.
