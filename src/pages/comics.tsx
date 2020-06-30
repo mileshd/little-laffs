@@ -88,7 +88,7 @@ class ComicIndex extends React.Component {
   }
 
   render() {
-    const { data } = this.props
+    const { data, location } = this.props
     const siteTitle = data.site.siteMetadata.title
     const comics = data.allMarkdownRemark.edges
 
