@@ -109,10 +109,7 @@ const MusicPage = ({ data, location }) => {
           <div className="song__details col-sm-6">
             <div className="song__details-title">Get Out (feat. Tcup)</div>
             <p>
-              It's not even the people themselves, but who they become in our mind.
-            </p>
-            <p>
-              That's who we're really talking to. Get out of my life.
+              And take your pens and pencils with you.
             </p>
           </div>
         </div>
@@ -160,3 +157,10 @@ export const pageQuery = graphql`
     }
   }
 `
+
+            //<p>
+              //It's not even the people themselves, but who they become in our mind.
+            //</p>
+            //<p>
+              //That's who we're really talking to. Get out of my life.
+            //</p>

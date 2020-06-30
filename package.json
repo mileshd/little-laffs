@@ -3,10 +3,7 @@
   "private": true,
   "description": "",
   "version": "0.1.0",
-  "author": "Miles Dickinson <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Miles Dickinson",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "gatsby": "^2.21.21",
@@ -41,16 +38,7 @@
   "devDependencies": {
     "prettier": "2.0.5"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
+  "license": "PRIVATE",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
