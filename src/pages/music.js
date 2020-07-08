@@ -53,7 +53,7 @@ const MusicPage = ({ data, location }) => {
         <div className="song row">
           <div className="song__video col-sm-6">
             <iframe
-              width="560"
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/OLrJq3-Crmg"
               frameBorder="0"
@@ -78,7 +78,7 @@ const MusicPage = ({ data, location }) => {
         <div className="song row">
           <div className="song__video col-sm-6">
             <iframe
-              width="560"
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/8na47XEBrLY"
               frameBorder="0"
@@ -97,7 +97,7 @@ const MusicPage = ({ data, location }) => {
         <div className="song row">
           <div className="song__video col-sm-6">
             <iframe
-              width="560"
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/Ns_8jadm2Bo"
               frameBorder="0"
@@ -116,7 +116,7 @@ const MusicPage = ({ data, location }) => {
         <div className="song row">
           <div className="song__video col-sm-6">
             <iframe
-              width="560"
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/_3ahkJLh7A0"
               frameBorder="0"
