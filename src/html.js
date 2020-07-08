@@ -17,6 +17,10 @@ export default function HTML(props) {
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossOrigin="anonymous"
         />
+        <link
+          rel="stylesheet"
+          href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
+          type="text/css" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
