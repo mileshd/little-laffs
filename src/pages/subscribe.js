@@ -1,150 +1,51 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import '../styles/subscribe.css'
 
-const SubscribePage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-
-  return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="Subscribe" />
-      <div className="subscribe">
-        <div id="mc_embed_signup">
-          <form action="https://littlelaffs.us10.list-manage.com/subscribe/post?u=dc116fbba7f8fdf89516df36f&amp;id=c1cf68d85c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <label for="mce-EMAIL">Subscribe</label>
-              <input type="email" value="" name="EMAIL" className="email" id="mce-EMAIL" placeholder="email address" required />
-
-              <div style={{ position: 'absolute', left: '-5000px'}} aria-hidden="true">
-                <input
-                  type="text"
-                  name="b_dc116fbba7f8fdf89516df36f_c1cf68d85c"
-                  tabindex="-1"
-                  value=""
-                />
-                <div className="clear"></div>
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" />
-              </div>
-            </div>
-          </form>
+class SubscriberPage extends React.Component {
+  render() {
+    return (
+      <Layout title='Subscribe'>
+        <div className="subscribe">
+          <h2>Subscribe to Little Laffs!</h2>
+          <h4>Your email will not be shared.</h4>
+          <h4>No Spam. Only Laffs.</h4>
+          <div
+            className="subscribe-form"
+            dangerouslySetInnerHTML={this.embeddedForm()}
+          >
+          </div>
         </div>
-      </div>
-    </Layout>
-  )
+      </Layout>
+    )
+  }
+
+  embeddedForm() {
+    return {
+      __html: `
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://littlelaffs.us10.list-manage.com/subscribe/post?u=dc116fbba7f8fdf89516df36f&amp;id=c1cf68d85c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required style="margin: 0 auto; margin-bottom: 25px; text-align: center; width: 90%; max-width: 385px; padding: 15px;">
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc116fbba7f8fdf89516df36f_c1cf68d85c" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="margin: 0 auto; padding: 10px; height: 50px;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+      `
+    };
+  }
 }
 
-        //<div id="mc_embed_signup">
-          //<form
-            //action="https://littlelaffs.us10.list-manage.com/subscribe/post?u=dc116fbba7f8fdf89516df36f&amp;id=c1cf68d85c"
-            //method="post"
-            //id="mc-embedded-subscribe-form"
-            //name="mc-embedded-subscribe-form"
-            //className="validate"
-            //target="_blank"
-            //novalidate
-          //>
-            //<div id="mc_embed_signup_scroll">
-              //<label for="mce-EMAIL">Subscribe</label>
-              //<input
-                //type="email"
-                //value=""
-                //name="EMAIL"
-                //className="email"
-                //id="mce-EMAIL"
-                //placeholder="email address"
-                //required
-              ///>
-              //<div
-                //style={{ position: 'absolute', left: '-5000px' }}
-                //aria-hidden="true"
-              //>
-                //<input
-                  //type="text"
-                  //name="b_dc116fbba7f8fdf89516df36f_c1cf68d85c"
-                  //tabindex="-1"
-                  //value=""
-                ///>
-              //</div>
-              //<div className="clear">
-                //<input
-                  //type="submit"
-                  //value="Subscribe"
-                  //name="subscribe"
-                  //id="mc-embedded-subscribe"
-                  //className="button"
-                ///>
-              //</div>
-            //</div>
-          //</form>
-        //</div>
-      //</div>
-
-export default SubscribePage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
-
-        //<div id="mc_embed_signup">
-          //<form
-            //action="https://littlelaffs.us10.list-manage.com/subscribe/post?u=dc116fbba7f8fdf89516df36f&amp;id=c1cf68d85c"
-            //method="post"
-            //id="mc-embedded-subscribe-form"
-            //name="mc-embedded-subscribe-form"
-            //className="validate"
-            //target="_blank"
-            //novalidate
-          //>
-            //<div id="mc_embed_signup_scroll">
-              //<label for="mce-EMAIL">Subscribe</label>
-              //<input
-                //type="email"
-                //value=""
-                //name="EMAIL"
-                //className="email"
-                //id="mce-EMAIL"
-                //placeholder="email address"
-                //required
-              ///>
-              //<div
-                //style={{ position: 'absolute', left: '-5000px' }}
-                //aria-hidden="true"
-              //>
-                //<input
-                  //type="text"
-                  //name="b_dc116fbba7f8fdf89516df36f_c1cf68d85c"
-                  //tabindex="-1"
-                  //value=""
-                ///>
-              //</div>
-              //<div className="clear">
-                //<input
-                  //type="submit"
-                  //value="Subscribe"
-                  //name="subscribe"
-                  //id="mc-embedded-subscribe"
-                  //className="button"
-                ///>
-              //</div>
-            //</div>
-          //</form>
-        //</div>
-      //<div id="mc_embed_signup">
-        //<form action="https://littlelaffs.us10.list-manage.com/subscribe/post?u=dc116fbba7f8fdf89516df36f&amp;id=c1cf68d85c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
-          //<div id="mc_embed_signup_scroll">
-          //<label for="mce-EMAIL">Subscribe</label>
-          //<input type="email" value="" name="EMAIL" className="email" id="mce-EMAIL" placeholder="email address" required>
-            //<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc116fbba7f8fdf89516df36f_c1cf68d85c" tabindex="-1" value=""></div>
-            //<div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"></div>
-            //</div>
-        //</form>
-      //</div>
+export default SubscriberPage

@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,15 +12,26 @@ const AboutPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About Little Laffs" />
-      <div className="about-page">
-        <div className="about-section">
-          Little Laffs is the best I can be. I strive to express value as much as possible. Everything is made with love and passion.
-        </div>
-        <div className="about-section">
-          My goal is to generate as much wealth and happiness as possible.
-        </div>
-        <div className="about-section">
-          I'm happy you are here.
+      <div className="about">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12 col-sm-3">
+             <Image
+               fixed={data.albumArt.childImageSharp.fixed}
+             />
+            </div>
+            <div className="col-xs-12 col-sm-9">
+              <p>
+                Little Laffs is the best I can be. I strive to express value as much as possible. Everything is made with love and passion.
+              </p>
+              <p>
+                My goal is to generate as much wealth and happiness as possible.
+              </p>
+              <p>
+                I'm happy you are here.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
@@ -33,6 +45,15 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    albumArt: file(absolutePath: {
+      regex: "/rough-cut-album-cover.png/"
+    }) {
+      childImageSharp {
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
+        }
       }
     }
   }
