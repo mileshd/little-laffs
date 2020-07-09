@@ -1,13 +1,14 @@
 .about {
   margin-top: 60px;
 }
+.about .about-image {
+  text-align: center;
+  margin-bottom: 25px;
+}
 .about img {
   border-radius: 150px;
 }
-.about .about-title {
-  font-size: 2em;
-}
-.about .about-section {
-  font-size: 1.25em;
-  margin-top: 15px;
+.about-description p {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
