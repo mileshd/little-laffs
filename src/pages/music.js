@@ -55,7 +55,7 @@ const MusicPage = ({ data, location }) => {
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/OLrJq3-Crmg"
+              src="https://www.youtube.com/embed/VS9VUd9aLF0"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -118,7 +118,7 @@ const MusicPage = ({ data, location }) => {
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/_3ahkJLh7A0"
+              src="https://www.youtube.com/embed/j6Aw3iepGMM"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
