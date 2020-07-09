@@ -1,6 +1,9 @@
 .about {
   margin-top: 60px;
 }
+.about img {
+  border-radius: 150px;
+}
 .about .about-title {
   font-size: 2em;
 }

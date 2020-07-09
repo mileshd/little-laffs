@@ -17,12 +17,12 @@ const AboutPage = ({ data, location }) => {
           <div className="row">
             <div className="col-xs-12 col-sm-3">
              <Image
-               fixed={data.albumArt.childImageSharp.fixed}
+               fixed={data.aboutPicture.childImageSharp.fixed}
              />
             </div>
-            <div className="col-xs-12 col-sm-9">
+            <div className="col-xs-12 col-sm-8 offset-sm-1">
               <p>
-                Little Laffs is the best I can be. I strive to express value as much as possible. Everything is made with love and passion.
+                Little Laffs is the best I can be, where everything is made with love and passion.
               </p>
               <p>
                 My goal is to generate as much wealth and happiness as possible.
@@ -47,8 +47,8 @@ export const pageQuery = graphql`
         title
       }
     }
-    albumArt: file(absolutePath: {
-      regex: "/rough-cut-album-cover.png/"
+    aboutPicture: file(absolutePath: {
+      regex: "/about-picture.png/"
     }) {
       childImageSharp {
         fixed(width: 250, height: 250) {
