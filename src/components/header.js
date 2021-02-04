@@ -30,6 +30,7 @@ export default class Header extends React.Component {
               <li><a href="/about">About</a></li>
             </ul> 
             <ul className="nav navbar-nav navbar-right">
+              <li><a href="https://www.instagram.com/thelittlelaffs/" target="_blank"><i className="fa fa-instagram" /></a></li>
               <li><a href="/subscribe">Subscribe</a></li>
             </ul> 
           </div>

@@ -63,11 +63,11 @@ const Index = ({ data, location }: PageProps<Data>) => {
               <div className="featured-music">
                 <h2>Featured Music</h2>
                 <div className="featured-music__video">
-                  <a href="/music"><h3>Apple Juice (feat. Tcup)</h3></a>
+                  <a href="/music"><h3>Desert Drive</h3></a>
                   <iframe
                     width="100%"
                     height="315"
-                    src="https://www.youtube.com/embed/VS9VUd9aLF0"
+                    src="https://www.youtube.com/embed/LhP8R0SOyjA"
                     frameBorder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

@@ -13,6 +13,25 @@ const MusicPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Music" />
       <div className="music-page">
+        <div className="song row">
+          <div className="song__video col-sm-6">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/LhP8R0SOyjA"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            >
+            </iframe>
+          </div>
+          <div className="song__details col-sm-6">
+            <div className="song__details-title">Desert Drive</div>
+            <p>
+              Welcome to the single series.
+            </p>
+          </div>
+        </div>
         <div className="music-release">
           <div className="music-release__art">
            <Image
@@ -157,10 +176,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-            //<p>
-              //It's not even the people themselves, but who they become in our mind.
-            //</p>
-            //<p>
-              //That's who we're really talking to. Get out of my life.
-            //</p>

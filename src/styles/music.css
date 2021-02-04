@@ -10,6 +10,9 @@
   margin-top: 15px;
 }
 
+.music-release {
+  margin-top: 50px;
+}
 .music-release__art {
   display: inline-block;
 }
