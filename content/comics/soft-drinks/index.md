@@ -1,7 +1,8 @@
 ---
 title: Soft Drinks 
 date: "2013-03-13T00:00:00.000Z"
-description: "Bud Muffins"
+description: "Soft Drinks"
+imgSrc: "soft-drinks.gif"
 ---
 
 ![Soft Drinks](./soft-drinks.gif)

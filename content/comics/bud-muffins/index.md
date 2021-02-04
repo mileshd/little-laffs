@@ -2,6 +2,7 @@
 title: Bud Muffins
 date: "2013-03-07T00:00:00.000Z"
 description: "Bud Muffins"
+imgSrc: "bud-muffins.jpg"
 ---
 
 ![Bud Muffins](./bud-muffins.gif)

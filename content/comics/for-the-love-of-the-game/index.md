@@ -2,6 +2,7 @@
 title: For the Love of the Game
 date: "2013-06-03T00:00:00.000Z"
 description: "For the Love of the Game"
+imgSrc: "for-the-love-of-the-game.gif"
 ---
 
 ![for the love of the game](./for-the-love-of-the-game.gif)

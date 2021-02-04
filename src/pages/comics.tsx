@@ -15,7 +15,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields: { slug: { regex: "/comics/" } } },
+      filter: { fields: { slug: { regex: "/comic/" } } },
       sort: { fields: [frontmatter___date],
       order: DESC }
     ) {
@@ -29,12 +29,21 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            imgSrc
           }
         }
       }
     }
   }
 `
+
+            /*imgSrc {*/
+              /*childImageSharp {*/
+                /*fluid(maxWidth: 800) {*/
+                  /*...GatsbyImageSharpFluid*/
+                /*}*/
+              /*}*/
+            /*}*/
 
 type Data = {
   site: {
@@ -49,6 +58,7 @@ type Data = {
         frontmatter: {
           title: string
           date: string
+          imgSrc: string
           description: string
         }
         fields: {
@@ -96,31 +106,27 @@ class ComicIndex extends React.Component {
       <Layout location={location} title={siteTitle}>
         <SEO title="Comics" />
         <div className="comics-page">
-          <div className="comics__section">
-            Comics have been called the "One True" medium.
-          </div>
-          <div className="comics__section">
-            A unique blend of visuals and words that wax poetic the limits of our humor and imagination. 
-          </div>
-          <div className="comics__section">
-            If you're in need of a chukle or two, you've come to the right place.
-          </div>
-          <div className="comics__section">
-            <b>
-              Pro Tip: Use the left and right arrow keys for quicker navigation.
-            </b>
-          </div>
           <div className="comics__list">
             {comics.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
+              console.log(node)
               return (
                 <Link key={node.fields.slug} to={node.fields.slug}>
-                  <div className="comic-list-item">
-                    <div className="comic__title">
-                      {title}
+                  <div className="comic">
+                    <div className="comic__header">
+                      <div className="comic__header__title">
+                        {title}
+                      </div>
+                      <div className="comic__header__date">
+                        {node.frontmatter.date}
+                      </div>
                     </div>
-                    <div className="comic__date">
-                      {node.frontmatter.date}
+                    <div className="comic__body">
+                      <img
+                        src={`/${node.frontmatter.imgSrc}`}
+                        alt="The image"
+                        className="comic__image"
+                      />
                     </div>
                   </div>
                 </Link>

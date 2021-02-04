@@ -2,6 +2,7 @@
 title: Toy Soldiers
 date: "2018-10-07T00:00:00.000Z"
 description: "Toy Soldiers"
+imgSrc: "toy-soldiers.jpg"
 ---
 
 ![Toy Soldiers](./toy-soldiers.jpg)

@@ -2,6 +2,7 @@
 title: Freedom Writers
 date: "2013-02-08T00:00:00.000Z"
 description: "Freedom Writers"
+imgSrc: "freedom-writers.gif"
 ---
 
 ![Freedom Writers](./freedom-writers.gif)

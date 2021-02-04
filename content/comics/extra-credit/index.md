@@ -2,6 +2,7 @@
 title: Extra Credit
 date: "2013-06-16T00:00:00.000Z"
 description: "Extra Credit"
+imgSrc: "extra-credit.gif"
 ---
 
 ![Extra Credit](./extra-credit.gif)

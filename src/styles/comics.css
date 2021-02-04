@@ -32,3 +32,23 @@
 .comics-page .comic-list-item:hover {
   background: #666;
 }
+
+/* NEW STYLES */
+.comics__list {
+}
+.comic__header {
+  text-align: center;
+}
+.comic__header__title {
+  font-size: 2.5em;
+}
+.comic__header__date {
+  font-size: 1.5em;
+}
+.comic__body {
+  text-align: center;
+}
+.comic__image {
+  width: 80%;
+  margin: 0 auto;
+}

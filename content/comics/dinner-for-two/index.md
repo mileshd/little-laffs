@@ -2,6 +2,7 @@
 title: Dinner for Two
 date: "2013-06-13T00:00:00.000Z"
 description: "Dinner for Two"
+imgSrc: "dinner-for-two.gif"
 ---
 
 ![Dinner for Two](./dinner-for-two.gif)
