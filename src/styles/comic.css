@@ -1,10 +1,22 @@
 .comic {
   margin-top: 60px;
+  text-align: center;
+}
+.comic .gatsby-resp-image-wrapper {
+  margin: 0 auto !important;
 }
 
+.comic .comic__header {
+  margin-bottom: 20px;
+}
 .comic .comic__navigation {
   display: inline-block;
   margin-bottom: 15px;
+  vertical-align: top;
+}
+.comic .comic__header__text {
+  display: inline-block;
+  margin: 0 25px;
 }
 .comic .comic__title {
   display: inline-block;
@@ -13,8 +25,7 @@
   vertical-align: middle;
 }
 .comic .comic__date {
-  display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.25em;
   vertical-align: middle;
 }
 .comic .comic__navigation .btn {
