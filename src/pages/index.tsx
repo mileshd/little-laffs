@@ -52,8 +52,8 @@ const Index = ({ data, location }: PageProps<Data>) => {
               <div className="featured-comic">
                 <h2>Featured Comic</h2>
                 <div className="featured-comic__picture">
-                  <a href="/comics/mother-effin-acne">
-                    <h3>Mother Effin Acne</h3>
+                  <a href="/comics/winter-wear">
+                    <h3>Winter Wear</h3>
                   </a>
                   <img src={featuredComic} width="100%" />
                 </div>
