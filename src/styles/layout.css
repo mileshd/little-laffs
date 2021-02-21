@@ -16,3 +16,6 @@ body {
   background: white;
   color: black;
 }
+.navbar-default .fa {
+  margin-right: 8px;
+}

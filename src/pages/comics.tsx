@@ -96,20 +96,6 @@ class ComicIndex extends React.Component {
       <Layout location={location} title={siteTitle}>
         <SEO title="Comics" />
         <div className="comics-page">
-          <div className="comics__section">
-            Comics have been called the "One True" medium.
-          </div>
-          <div className="comics__section">
-            A unique blend of visuals and words that wax poetic the limits of our humor and imagination. 
-          </div>
-          <div className="comics__section">
-            If you're in need of a chukle or two, you've come to the right place.
-          </div>
-          <div className="comics__section">
-            <b>
-              Pro Tip: Use the left and right arrow keys for quicker navigation.
-            </b>
-          </div>
           <div className="comics__list">
             {comics.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug

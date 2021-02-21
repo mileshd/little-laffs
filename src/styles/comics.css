@@ -16,13 +16,14 @@
 
 .comics-page .comics__list {
   margin: 20px 0;
+  text-align: center;
 }
 .comics-page .comic-list-item {
   display: inline-block;
   margin-right: 25px;
   margin-bottom: 25px;
-  border-radius: 10px;
-  padding: 25px;
+  border-radius: 60px;
+  padding: 30px;
   background: #aaa;
   color: white;
   text-align: center;
@@ -31,4 +32,7 @@
 }
 .comics-page .comic-list-item:hover {
   background: #666;
+}
+.comics-page .comic-list-item .comic__title {
+  font-size: 1.25em;
 }

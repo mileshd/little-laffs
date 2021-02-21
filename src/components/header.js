@@ -30,7 +30,34 @@ export default class Header extends React.Component {
               <li><a href="/about">About</a></li>
             </ul> 
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="/subscribe">Subscribe</a></li>
+              <li>
+                <a
+                  href="https://www.instagram.com/thelittlelaffs/"
+                  target="_blank"
+                >
+                  <i className="fa fa-instagram" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/artist/7ybAZB450esKgFf3s5aIla"
+                  target="_blank"
+                >
+                  <i className="fa fa-spotify" />
+                </a>
+              </li>
+              <li>
+                <a href="/subscribe">
+                  <i className="fa fa-envelope" />
+                  Subscribe 
+                </a>
+              </li>
+              <li>
+                <a href="mailto:helloworld.thelittlelaffs@gmail.com">
+                  <i className="fa fa-envelope-o" />
+                  Message
+                </a>
+              </li>
             </ul> 
           </div>
         </div>
