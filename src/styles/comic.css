@@ -1,6 +1,10 @@
 .comic {
   margin-top: 60px;
+  margin-bottom: 100px;
   text-align: center;
+}
+.comic p:nth-child(2) {
+  margin-top: 50px;
 }
 .comic .gatsby-resp-image-wrapper {
   margin: 0 auto !important;
