@@ -6,4 +6,4 @@ description: "Stacked Deck"
 
 ![Stacked Deck](./stacked-deck.jpg)
 
-When the odds are not in your favor, remember, there are always wild cards.
+Cards don't know they're wild until they're played.
