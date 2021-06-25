@@ -1,7 +1,7 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-import featuredComic from '../../content/comics/winter-wear/winter-wear-copy.jpg'
+import featuredComic from '../../content/comics/losing-your-cool/losing-your-cool.jpeg'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import '../styles/index.css'
@@ -52,8 +52,8 @@ const Index = ({ data, location }: PageProps<Data>) => {
               <div className="featured-comic">
                 <h2>Featured Comic</h2>
                 <div className="featured-comic__picture">
-                  <a href="/comics/winter-wear">
-                    <h3>Winter Wear</h3>
+                  <a href="/comics/losing-your-cool/">
+                    <h3>Losing your Cool</h3>
                   </a>
                   <img src={featuredComic} width="100%" />
                 </div>
