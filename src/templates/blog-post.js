@@ -54,35 +54,71 @@ class BlogPostTemplate extends React.Component {
         />
         <div className="comic">
           <div className="comic__header">
-            <div className="comic__navigation">
-              {previous ? (
-                <Link to={previous.fields.slug} rel="prev" className="btn btn-default">
-                  ← Previous
-                </Link>
-              ) : (
-                <Link to={'/comics'} rel="prev" className="btn btn-default">
-                  ← Comics
-                </Link>
-              )}
-            </div>
-            <div className="comic__header__text">
-              <div className="comic__title">
-                {post.frontmatter.title}
+            <div className="mobile-header">
+              <div>
+                <div className="comic__navigation">
+                  {next ? (
+                    <Link to={next.fields.slug} rel="next" className="btn btn-default">
+                      ← Previous
+                    </Link>
+                  ) : (
+                    <Link to={'/comics'} rel="next" className="btn btn-default">
+                      ← Comics
+                    </Link>
+                  )}
+                </div>
+                <div className="comic__navigation">
+                  {previous ? (
+                    <Link to={previous.fields.slug} rel="prev" className="btn btn-default">
+                      Next →
+                    </Link>
+                  ) : (
+                    <Link to={'/comics'} rel="prev" className="btn btn-default">
+                      Comics →
+                    </Link>
+                  )}
+                </div>
               </div>
-              <div className="comic__date">
-                {post.frontmatter.date}
+              <div className="comic__header__text">
+                <div className="comic__title">
+                  {post.frontmatter.title}
+                </div>
+                <div className="comic__date">
+                  {post.frontmatter.date}
+                </div>
               </div>
             </div>
-            <div className="comic__navigation">
-              {next ? (
-                <Link to={next.fields.slug} rel="next" className="btn btn-default">
-                  Next →
-                </Link>
-              ) : (
-                <Link to={'/comics'} rel="next" className="btn btn-default">
-                  Comics →
-                </Link>
-              )}
+            <div className="web-header">
+              <div className="comic__navigation">
+                {next ? (
+                  <Link to={next.fields.slug} rel="next" className="btn btn-default">
+                    ← Previous
+                  </Link>
+                ) : (
+                  <Link to={'/comics'} rel="next" className="btn btn-default">
+                    ← Comics
+                  </Link>
+                )}
+              </div>
+              <div className="comic__header__text">
+                <div className="comic__title">
+                  {post.frontmatter.title}
+                </div>
+                <div className="comic__date">
+                  {post.frontmatter.date}
+                </div>
+              </div>
+              <div className="comic__navigation">
+                {previous ? (
+                  <Link to={previous.fields.slug} rel="prev" className="btn btn-default">
+                    Next →
+                  </Link>
+                ) : (
+                  <Link to={'/comics'} rel="prev" className="btn btn-default">
+                    Comics →
+                  </Link>
+                )}
+              </div>
             </div>
           </div>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
