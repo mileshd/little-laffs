@@ -41,7 +41,7 @@ const Index = ({ data, location }: PageProps<Data>) => {
           <div className="home-section">
             <h1>Welcome to Little Laffs!</h1>
             <p>
-              Home to insightful comics, ground-breaking music, cutting edge videos, amazing games, and the best vibes.
+              Home to <a href="/comics">insightful comics</a>, <a href="/music">ground-breaking music</a>, amazing games, and the best vibes.
             </p>
             <p>
                I hope you enjoy your stay.
@@ -50,7 +50,6 @@ const Index = ({ data, location }: PageProps<Data>) => {
           <div className="row">
             <div className="col-xs-12 col-sm-6">
               <div className="featured-comic">
-                <h2>Featured Comic</h2>
                 <div className="featured-comic__picture">
                   <a href="/comics/sprucing-up/">
                     <h3>Sprucing Up the Homestead</h3>
@@ -61,7 +60,6 @@ const Index = ({ data, location }: PageProps<Data>) => {
             </div>
             <div className="col-xs-12 col-sm-6">
               <div className="featured-music">
-                <h2>Featured Music</h2>
                 <div className="featured-music__video">
                   <a href="/music"><h3>Apple Juice (feat. Tcup)</h3></a>
                   <iframe

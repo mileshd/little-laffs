@@ -20,3 +20,18 @@ p {
   font-size: 1.5em;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+}
+.home-page {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .home-page {
+    text-align: left;
+  }
+}
