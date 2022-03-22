@@ -4,7 +4,7 @@ date: "2013-06-03T00:00:00.000Z"
 description: "For the Love of the Game"
 ---
 
-![for the love of the game](./for-the-love-of-the-game.gif)
+![for the love of the game](./for-the-love-of-the-game.jpg)
 
 They say 90% of sports is mental.
 

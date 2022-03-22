@@ -4,7 +4,7 @@ date: "2013-02-08T00:00:00.000Z"
 description: "Freedom Writers"
 ---
 
-![Freedom Writers](./freedom-writers.gif)
+![Freedom Writers](./freedom-writers.jpg)
 
 BMGT 364: Operations and Management. That's where it all began. Good lord that class was drier than Saltines.
 

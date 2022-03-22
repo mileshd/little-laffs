@@ -1,7 +1,7 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-import featuredComic from '../../content/comics/sprucing-up/sprucing-up.png'
+import featuredComic from '../../content/comics/sprucing-up/sprucing-up.jpg'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import '../styles/index.css'
