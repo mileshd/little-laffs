@@ -6,4 +6,4 @@ description: "Sprucing Up the Homestead"
 
 ![Sprucing Up](./sprucing-up.jpg)
 
-If a tree falls on your house and no one is around to hear it, does it make insurance fruad?
+If a tree falls on your house and no one is around to hear it, is it still insurance fruad?
