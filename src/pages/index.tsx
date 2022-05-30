@@ -29,9 +29,20 @@ type Data = {
   }
 }
 
+const randomSayings = [
+    'What a time to be alive. How alive we are this time.',
+    'That is what I thought.',
+    'We are the truth of the World.',
+    'Only you can figure out what will make you happy, now, in 10 years, in 50. Be patient and love while you learn and grow.',
+    'Puella sub arbore sedit et librum suum latinum legit'
+]
+
 const Index = ({ data, location }: PageProps<Data>) => {
   console.log(data)
   const siteTitle = data.site.siteMetadata.title
+
+  const sayingIndex = getRandomInt(0, randomSayings.length - 1)
+  const randomSaying = randomSayings[sayingIndex]
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -39,12 +50,11 @@ const Index = ({ data, location }: PageProps<Data>) => {
       <div className="home-page">
         <div className="container">
           <div className="home-section">
-            <h1>Welcome to Little Laffs!</h1>
             <p>
-              Home to <a href="/comics">insightful comics</a>, <a href="/music">ground-breaking music</a>, amazing games, and the best vibes.
+              We are <a href="/comics">insightful comics</a>, <a href="/music">ground-breaking music</a>, amazing games, and the best vibes.
             </p>
             <p>
-               I hope you enjoy your stay.
+              {randomSaying}
             </p>
           </div>
           <div className="row">
@@ -79,6 +89,12 @@ const Index = ({ data, location }: PageProps<Data>) => {
       </div>
     </Layout>
   )
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 export default Index
