@@ -8,9 +8,9 @@ class SubscriberPage extends React.Component {
     return (
       <Layout title='Subscribe'>
         <div className="subscribe">
-          <h2>Subscribe to Little Laffs!</h2>
-          <h4>Your email will not be shared.</h4>
-          <h4>No Spam. Only Laffs.</h4>
+          <h4>
+            Subscribe to little laffs! Your email will not be shared. No spam, only laffs.
+          </h4>
           <div
             className="subscribe-form"
             dangerouslySetInnerHTML={this.embeddedForm()}

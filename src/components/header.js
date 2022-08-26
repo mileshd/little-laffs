@@ -36,6 +36,7 @@ export default class Header extends React.Component {
                   target="_blank"
                 >
                   <i className="fa fa-instagram" />
+                  <span className="mobile-show">Instagram</span>
                 </a>
               </li>
               <li>
@@ -44,6 +45,7 @@ export default class Header extends React.Component {
                   target="_blank"
                 >
                   <i className="fa fa-spotify" />
+                  <span className="mobile-show">Spotify</span>
                 </a>
               </li>
               <li>
@@ -53,9 +55,9 @@ export default class Header extends React.Component {
                 </a>
               </li>
               <li>
-                <a href="mailto:helloworld.thelittlelaffs@gmail.com">
+                <a href="mailto:thelittlelaffs@gmail.com">
                   <i className="fa fa-envelope-o" />
-                  Message
+                  Contact
                 </a>
               </li>
             </ul> 
@@ -65,3 +67,8 @@ export default class Header extends React.Component {
     )
   }
 }
+
+              //<li><a href="/music">Photos</a></li>
+              //<li><a href="/music">Games</a></li>
+              //<li><a href="/music">Essays</a></li>
+              //<li><a href="/music">Shop</a></li>

@@ -13,9 +13,20 @@ body {
   border-width: 0;
 }
 .navbar-default {
-  background: white;
+  background: #cedaf4;
+  border: none;
+  margin-bottom: 25px;
   color: black;
 }
 .navbar-default .fa {
   margin-right: 8px;
+}
+
+.mobile-show {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .mobile-show {
+    display: inline;
+  }
 }
