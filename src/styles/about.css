@@ -8,6 +8,11 @@
 .about img {
   border-radius: 150px;
 }
+.about-description {
+  padding: 50px 75px;
+  background: lightblue;
+  border-radius: 100px;
+}
 .about-description p {
   font-size: 28px;
   margin-bottom: 20px;

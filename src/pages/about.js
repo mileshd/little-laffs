@@ -11,7 +11,7 @@ const AboutPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="About Little Laffs" />
+      <SEO title="About littlelaffs" />
       <div className="about">
         <div className="container">
           <div className="row">
@@ -22,13 +22,16 @@ const AboutPage = ({ data, location }) => {
             </div>
             <div className="about-description col-xs-12 col-sm-6 col-md-8">
               <p>
-                Little Laffs is the best I can be, where everything is made with love and passion.
+                hi. it's ittlelaffs, where passion and dedication are stitched into every detail
               </p>
               <p>
-                My goal is to generate as much wealth and happiness as possible.
+                littlelaffs is the best i can be
               </p>
               <p>
-                I'm happy you are here.
+                live with an abundance of joy and prosperity
+              </p>
+              <p>
+                i'm happy you are here
               </p>
             </div>
           </div>
@@ -48,10 +51,10 @@ export const pageQuery = graphql`
       }
     }
     aboutPicture: file(absolutePath: {
-      regex: "/about-picture.jpg/"
+      regex: "/little-laffs.png/"
     }) {
       childImageSharp {
-        fixed(width: 250, height: 250) {
+        fixed(width: 450, height: 650) {
           ...GatsbyImageSharpFixed
         }
       }

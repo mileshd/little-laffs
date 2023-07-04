@@ -3,9 +3,17 @@
   margin-bottom: 100px;
   text-align: center;
 }
+.comic p:nth-child(2),
+.comic p:nth-child(3),
+.comic p:nth-child(4) {
+  max-width: 800px;
+  text-align: center;
+  margin: 25px auto;
+}
 .comic p:nth-child(2) {
   margin-top: 50px;
 }
+
 .comic .gatsby-resp-image-wrapper {
   margin: 0 auto !important;
 }
@@ -17,10 +25,13 @@
   display: inline-block;
   margin-bottom: 15px;
   vertical-align: top;
+  width: 25%;
+  margin-top: 10px;
 }
 .comic .comic__header__text {
   display: inline-block;
-  margin: 0 25px;
+  padding: 0 15px;
+  width: 50%;
 }
 .comic .comic__title {
   display: inline-block;
@@ -34,6 +45,7 @@
 }
 .comic .comic__navigation .btn {
   margin-right: 10px;
+  width: 100%;
 }
 
 .comic .comic__image img {
@@ -61,5 +73,6 @@
   }
   .web-header {
     display: block;
+    margin-top: 70px;
   }
 }

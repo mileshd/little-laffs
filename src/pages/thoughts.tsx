@@ -5,7 +5,7 @@ import { navigate, PageProps, Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "../styles/comics.css"
+import "../styles/thoughts.css"
 
 export const pageQuery = graphql`
   query {
@@ -15,7 +15,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields: { slug: { regex: "/comics/" } } },
+      filter: { fields: { slug: { regex: "/blog/" } } },
       sort: { frontmatter: { date: DESC } },
     ) {
       edges {
@@ -58,11 +58,11 @@ type Data = {
   }
 }
 
-class ComicIndex extends React.Component {
+class ThoughtIndex extends React.Component {
   componentDidMount() {
-    const comics = this.props.data.allMarkdownRemark.edges
-    const firstComic = comics[0].node
-    const lastComic = comics[comics.length - 1].node
+    const thoughts = this.props.data.allMarkdownRemark.edges
+    const firstThought = thoughts[0].node
+    const lastThought = thoughts[thoughts.length - 1].node
 
     // Arrow Key integration
     $(document).on('keydown', evt => {
@@ -72,11 +72,11 @@ class ComicIndex extends React.Component {
 
       // Left Arrow
       if (keyCode === 37) {
-        navigate(lastComic.fields.slug)
+        navigate(lastThought.fields.slug)
       }
       // Right Arrow
       if (keyCode === 39) {
-        navigate(firstComic.fields.slug)
+        navigate(firstThought.fields.slug)
       }
     })
   }
@@ -89,22 +89,22 @@ class ComicIndex extends React.Component {
   render() {
     const { data, location } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const comics = data.allMarkdownRemark.edges
+    const thoughts = data.allMarkdownRemark.edges
 
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title="Comics" />
-        <div className="comics-page">
-          <div className="comics__list">
-            {comics.map(({ node }) => {
+        <SEO title="Thoughts" />
+        <div className="thoughts-page">
+          <div className="thoughts__list">
+            {thoughts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
                 <Link key={node.fields.slug} to={node.fields.slug}>
-                  <div className="comic-list-item">
-                    <div className="comic__title">
+                  <div className="thought-list-item">
+                    <div className="thought__title">
                       {title}
                     </div>
-                    <div className="comic__date">
+                    <div className="thought__date">
                       {node.frontmatter.date}
                     </div>
                   </div>
@@ -118,4 +118,4 @@ class ComicIndex extends React.Component {
   }
 }
 
-export default ComicIndex
+export default ThoughtIndex

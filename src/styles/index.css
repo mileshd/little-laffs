@@ -1,3 +1,7 @@
+body {
+  min-height: calc(100vh);
+  background: linear-gradient(to top, #e9e9fb, white 15%, white);
+}
 
 .home-page {
   margin-top: 60px;
@@ -50,4 +54,8 @@ h3 {
   .home-page {
     text-align: left;
   }
+}
+
+.navbar {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
 }

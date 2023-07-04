@@ -24,7 +24,7 @@ const MusicPage = ({ data, location }) => {
               Rough Cut
             </div>
             <div className="details-sub-title">
-              By Little Laffs, 2020
+              by littlelaffs, 2020
             </div>
             <div className="details-tracks">
               <div className="track">

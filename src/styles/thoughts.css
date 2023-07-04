@@ -1,0 +1,38 @@
+.thoughts-page {
+  margin-top: 80px;
+}
+
+.thoughts-page a {
+  text-decoration: none;
+}
+.thoughts-page a:hover {
+  text-decoration: none;
+}
+
+.thoughts-page .thoughts__section {
+  font-size: 1.25em;
+  margin-top: 15px;
+}
+
+.thoughts-page .thoughts__list {
+  margin: 20px 0;
+  text-align: center;
+}
+.thoughts-page .thought-list-item {
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 60px;
+  padding: 30px;
+  background: #aaa;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.25em;
+}
+.thoughts-page .thought-list-item:hover {
+  background: #666;
+}
+.thoughts-page .thought-list-item .thought__title {
+  font-size: 1.25em;
+}

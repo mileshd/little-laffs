@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Little Laffs`,
+    title: `littlelaffs`,
     author: {
       name: `Miles Dickinson`,
       summary: `Artist`,
     },
-    description: `Web Presence for the artist, Little Laffs.`,
+    description: `Web Presence for the artist, littlelaffs.`,
     siteUrl: `http://littlelaffs.com`,
     social: {
       twitter: `thelittlelaffs`,
@@ -57,28 +57,6 @@ module.exports = {
         trackingId: `UA-171055276-1`,
       },
     },
-    `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Little Laffs`,
-        short_name: `LittleLaffs`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/favicon.png`,
-      },
-    },
     `gatsby-plugin-react-helmet`,
-    //{
-      //resolve: `gatsby-plugin-typography`,
-      //options: {
-        //pathToConfigModule: `src/utils/typography`,
-      //},
-    //},
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
