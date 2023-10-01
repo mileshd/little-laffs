@@ -24,14 +24,16 @@
   margin-bottom: 25px;
   border-radius: 60px;
   padding: 30px;
-  background: #aaa;
-  color: white;
+  /*background: #aaa;*/
+  background: radial-gradient(ellipse 100% 100% at var(--blob-a-x) var(--blob-a-y),rgba(255,255,255,0.7),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-b-x) var(--blob-b-y),rgba(239,222,255,1),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-c-x) var(--blob-c-y),rgba(202,221,255,1),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-d-x) var(--blob-d-y),rgba(212,255,248,1),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-e-x) var(--blob-e-y),rgba(239,222,255,1),transparent 100%);
+  /*color: white;*/
   text-align: center;
   cursor: pointer;
   font-size: 1.25em;
 }
 .comics-page .comic-list-item:hover {
-  background: #666;
+  /*background: #666;*/
+  background: radial-gradient(ellipse 100% 100% at var(--blob-a-x) var(--blob-a-y),rgba(255,255,255,0.7),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-b-x) var(--blob-b-y),rgb(197 158 233),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-c-x) var(--blob-c-y),rgb(164 193 244),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-d-x) var(--blob-d-y),rgb(141 240 224),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-e-x) var(--blob-e-y),rgb(199 156 240),transparent 100%);
 }
 .comics-page .comic-list-item .comic__title {
   font-size: 1.25em;

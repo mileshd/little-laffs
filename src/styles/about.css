@@ -10,8 +10,9 @@
 }
 .about-description {
   padding: 50px 75px;
-  background: lightblue;
+  /*background: lightblue;*/
   border-radius: 100px;
+  background: radial-gradient(ellipse 100% 100% at var(--blob-a-x) var(--blob-a-y),rgba(255,255,255,0.7),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-b-x) var(--blob-b-y),rgba(239,222,255,1),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-c-x) var(--blob-c-y),rgba(202,221,255,1),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-d-x) var(--blob-d-y),rgba(212,255,248,1),transparent 100%),radial-gradient(ellipse 100% 100% at var(--blob-e-x) var(--blob-e-y),rgba(239,222,255,1),transparent 100%);
 }
 .about-description p {
   font-size: 28px;
