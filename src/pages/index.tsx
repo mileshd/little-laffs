@@ -1,7 +1,8 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-import featuredComic from '../../content/comics/sprucing-up/sprucing-up.jpg'
+import featuredComic from '../../content/comics/poetic-journey/poetic-journey.jpg'
+import albumCover from '../../content/assets/chestar-ballads-album-cover.png'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import '../styles/index.css'
@@ -34,7 +35,9 @@ const randomSayings = [
     'That is what I thought.',
     'We are the truth of the World.',
     'Only you can figure out what will make you happy, now, in 10 years, in 50. Be patient and love while you learn and grow.',
-    'Puella sub arbore sedit et librum suum latinum legit'
+    `Only buy what you can't explain`,
+    'It takes one second to smile but one hour to frown',
+    `Stand back. I've stolen the chips and I'm about to start snacking`,
 ]
 
 const Index = ({ data, location }: PageProps<Data>) => {
@@ -61,26 +64,18 @@ const Index = ({ data, location }: PageProps<Data>) => {
             <div className="col-xs-12 col-sm-6">
               <div className="featured-comic">
                 <div className="featured-comic__picture">
-                  <a href="/comics/sprucing-up/">
-                    <h3>Sprucing Up the Homestead</h3>
+                  <a href="/comics/poetic-journey/">
+                    <h3>Poetic Journey</h3>
                   </a>
-                  <img src={featuredComic} width="100%" />
+                  <img src={featuredComic} width="100%" className="layered-shadow" />
                 </div>
               </div>
             </div>
             <div className="col-xs-12 col-sm-6">
               <div className="featured-music">
                 <div className="featured-music__video">
-                  <a href="/music"><h3>Apple Juice (feat. Tcup)</h3></a>
-                  <iframe
-                    width="100%"
-                    height="315"
-                    src="https://www.youtube.com/embed/VS9VUd9aLF0"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  >
-                  </iframe>
+                  <h3>EP Drop this October!</h3>
+                  <img src={albumCover} width="100%" />
                 </div>
               </div>
             </div>

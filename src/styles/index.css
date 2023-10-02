@@ -5,6 +5,7 @@ body {
 
 .home-page {
   margin-top: 60px;
+  margin-bottom: 100px;
 }
 
 @keyframes color {
@@ -34,6 +35,37 @@ body {
 }
 .home-page .featured-comic .img {
   width: 100% !important;
+}
+
+/* EXAMPLE STYLE */
+.layered-shadow {
+  box-shadow: 0 5px 5px rgba(240,240,240,0.7), 
+              0 10px 10px rgba(240,240,240,0.7), 
+              0 20px 20px rgba(240,240,240,0.7);
+  transition: box-shadow 0.5s ease-in-out;
+}
+.layered-shadow:hover {
+  box-shadow: 0 10px 10px rgba(240,240,240,0.7), 
+              0 20px 20px rgba(240,240,240,0.7), 
+              0 40px 40px rgba(240,240,240,0.7);
+}
+
+
+/* If Comic */
+.home-page .featured-music {
+  text-align: center;
+}
+.home-page .featured-music img {
+  margin-top: 15px;
+  width: 70%;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.1), 
+              20px 20px 10px rgba(0,0,0,0.1),
+              20px 0 20px rgba(0,0,0,0.1);
+}
+.home-page .featured-music img:hover {
+  transform: rotateY(10deg);
 }
 
 p {
