@@ -22,10 +22,7 @@ const AboutPage = ({ data, location }) => {
             </div>
             <div className="about-description col-xs-12 col-sm-6 col-md-8">
               <p>
-                hi. it's ittlelaffs, where passion and dedication are stitched into every detail
-              </p>
-              <p>
-                littlelaffs is the best i can be
+                hi. it's littlelaffs, where passion and dedication are stitched into every detail
               </p>
               <p>
                 live with an abundance of joy and prosperity
