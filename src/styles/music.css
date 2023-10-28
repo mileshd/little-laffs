@@ -10,12 +10,26 @@
   margin-top: 15px;
 }
 
+.music-release {
+  background: #e2fdfd; /* Fallback */
+  animation: color 20s infinite ease-out;
+  padding: 25px 35px;
+  border-radius: 25px;
+}
+@keyframes color {
+  0%   { background: #e2fdfd; }
+  20%  { background: #e8fde2; }
+  60%  { background: #e2e3fd; }
+  100% { background: #e2fdfd; }
+}
+
 .music-release__art {
   display: inline-block;
 }
 .music-release__details {
   display: inline-block;
   vertical-align: top;
+  margin-left: 15px;
 }
 .music-release__details .details-title {
   padding: 15px 0 15px 15px;;
