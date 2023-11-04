@@ -74,7 +74,7 @@ const Index = ({ data, location }: PageProps<Data>) => {
             <div className="col-xs-12 col-sm-6">
               <div className="featured-music">
                 <div className="featured-music__video">
-                  <h3>EP Drop this October!</h3>
+                  <h3>EP Drop this December!</h3>
                   <img src={albumCover} width="100%" />
                 </div>
               </div>
