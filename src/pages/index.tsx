@@ -38,6 +38,7 @@ const randomSayings = [
     `Only buy what you can't explain`,
     'It takes one second to smile but one hour to frown',
     `Stand back. I've stolen the chips and I'm about to start snacking`,
+    `Never underestimate the power of scissors`,
 ]
 
 const Index = ({ data, location }: PageProps<Data>) => {
@@ -74,7 +75,7 @@ const Index = ({ data, location }: PageProps<Data>) => {
             <div className="col-xs-12 col-sm-6">
               <div className="featured-music">
                 <div className="featured-music__video">
-                  <h3>EP Drop this December!</h3>
+                  <h3>EP Drop this April!</h3>
                   <img src={albumCover} width="100%" />
                 </div>
               </div>

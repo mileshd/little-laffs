@@ -23,7 +23,7 @@ const ShopPage = ({ data, location }) => {
                 littlelaffs t-shirt
               </h2>
               <p>
-                One of a kind. large. the pumpkin is orange but looks brown in the picture for some reason.
+                One of a kind. large. Supplies WILL NOT last.
               </p>
               <p>
                 $100
